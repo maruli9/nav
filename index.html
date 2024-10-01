@@ -9,10 +9,10 @@
 <body>
     <nav>
         <div class="logo">
-            <h1>Logo</h1>
+            <img style="width: 120px;" onclick="playAudio()"   src="path1.png" alt="">
         </div>
         <ul id="menuList">
-            <li><a href="">Home</a></li>
+            <li  ><a  href="">Home</a></li>
             <li><a href="pictures.html">Galeria</a></li>
             <li><a href="">Babolat-Cup</a></li>
             <li><a href="">Movies</a></li>
@@ -22,6 +22,13 @@
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
+
+    <audio id="myAudio" ></audio>
+        
+        <source src="shot.mp3" type="audio/mpeg" >
+        
+      </audio>
+
 
 
     <script>
@@ -37,8 +44,15 @@
                 menuList.style.maxHeight = "0px";
             }
         }
+    
         
+        var x = document.getElementById("myAudio"); 
+
+        function playAudio() { 
+        x.play(); 
+} 
     </script>
+    
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
 </html>
