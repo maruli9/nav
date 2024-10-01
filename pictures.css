@@ -26,7 +26,7 @@ img{
 }
 h1{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 50px;
     font-size: 2rem;
     color: white;letter-spacing: .9rem;
@@ -34,13 +34,17 @@ h1{
 h2{
     position: sticky;
     top: 0;
-    margin-left: 12%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.592);
+    padding: 15px;
+    
     
     
     
 }
 h2 a{
     text-decoration: none;
-    color: rgb(184, 182, 182);
+    color: rgb(255, 255, 255);
     letter-spacing: 4px;
+    
 }
