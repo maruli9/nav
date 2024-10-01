@@ -15,7 +15,7 @@
             <li  ><a  href="">Home</a></li>
             <li><a href="pictures.html">Galeria</a></li>
             <li><a href="">Babolat-Cup</a></li>
-            <li><a href="">Movies</a></li>
+            <li><a href="movies.html">Movies</a></li>
             <li><a href="">Contact</a></li>
         </ul>
         <div class="menu-icon">
@@ -23,7 +23,7 @@
         </div>
     </nav>
 
-    <audio id="myAudio" ></audio>
+    <audio id="myAudio" autoplay>
         
         <source src="shot.mp3" type="audio/mpeg" >
         
@@ -31,26 +31,11 @@
 
 
 
-    <script>
-        let menuList = document.getElementById("menuList")
-        menuList.style.maxHeight = "0px";
-
-        function toggleMenu(){
-            if(menuList.style.maxHeight == "0px")
-            {
-                menuList.style.maxHeight = "300px";
-            }
-            else{
-                menuList.style.maxHeight = "0px";
-            }
-        }
+    <script src="script.js">
+        
     
         
-        var x = document.getElementById("myAudio"); 
-
-        function playAudio() { 
-        x.play(); 
-} 
+        
     </script>
     
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
