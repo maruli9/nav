@@ -38,7 +38,7 @@ h1{
     color: white;letter-spacing: .6rem;
 }
 h2{
-    position: sticky;
+    position: fixed;
     top: 0;
     text-align: center;
     margin-top: 25px;
