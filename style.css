@@ -8,7 +8,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background: #3498db;
+    
     background-image: url(111.jpg);background-size: cover;
     background-position: center;
 }
@@ -23,6 +23,7 @@ nav{
     height: 70px;
     box-shadow: 3px 3px 3px 0.1px black;
 }
+
 
 .logo{
     color: #fff;
