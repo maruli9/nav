@@ -19,9 +19,11 @@ nav{
     align-items: center;
     justify-content: space-between;
     background: #00427419;
-    position: relative;
+    position: fixed;
+    width: 100vw;
     height: 70px;
     box-shadow: 3px 3px 3px 0.1px black;
+
 }
 
 

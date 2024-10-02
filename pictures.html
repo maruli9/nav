@@ -7,9 +7,37 @@
     <link rel="stylesheet" href="pictures.css">
 </head>
 <body>
-    <h2><a href="index.html">home</a></h2>
-    <h1>GALERIA</h1>
-    <div class="list">
+
+    <nav>
+        <div class="logo">
+            <img style="width: 120px; border: none;" onclick="playAudio()"   src="path1.png" alt="">
+        </div>
+        <ul id="menuList">
+            <li  ><a  href="index.html">Home</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="babolatcup.html">Babolat-Cup</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="https://bwfbadminton.com/">BWF-fun-site</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i id="burger" class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            <i id="cancel" class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+            
+        </div>
+    </nav>
+
+    <audio id="myAudio" autoplay>
+        
+        <source src="shot.mp3" type="audio/mpeg" >
+        
+      </audio>
+
+
+
+    
+    
+    <div class="zbiornik">
+        <div class="list">
         <img src="1.jpg" alt="">
         <img src="2.jpg" alt="">
         <img src="3.png" alt="">
@@ -25,5 +53,15 @@
         <img src="13.jpg" alt="">
       
     </div>
+</div>
+    <script src="script.js">
+        
+    
+        
+        
+    </script>
+    
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
