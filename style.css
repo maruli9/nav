@@ -99,6 +99,29 @@ nav ul li a:hover{
     to {transform: translateX(250px); }
   }
 
+  .anime {
+    position: absolute;
+    margin-top: -200px;
+    margin-bottom: 1200px;
+    font-size: 1.1rem;
+    color: white;letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+    
+    animation-name: anime;
+    
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+    rotate: 90deg;
+
+  }
+@keyframes anime {
+    from {transform: translateX(-200px); }
+    
+    to {transform: translateX(950px); }
+  }
+
 
 
 @media (max-width:600px) {
