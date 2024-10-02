@@ -32,7 +32,16 @@ nav{
 }
 
 
-
+.logo{
+    color: #fff;
+    width: 50px;
+}
+.hk{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 10px;
+}
 
 
 nav ul{
