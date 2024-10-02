@@ -78,6 +78,29 @@ nav ul li a:hover{
     
 }
 
+.anim {
+    position: absolute;
+    margin-top: 200px;
+    font-size: 1.1rem;
+    color: white;letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+    
+    animation-name: anim;
+    
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+
+  }
+@keyframes anim {
+    from {transform: translateX(-400px); }
+    
+    to {transform: translateX(250px); }
+  }
+
+
+
 @media (max-width:600px) {
     nav ul{
         position: absolute;
