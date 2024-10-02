@@ -23,3 +23,9 @@ let burger = document.getElementById('burger')
 
             }
         }
+
+        var my = document.getElementById("my");
+
+function togglePlay() {
+  return my.paused ? my.play() : my.pause();
+};
