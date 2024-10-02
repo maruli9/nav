@@ -68,11 +68,11 @@ nav ul li a:hover{
 .pp{
     position: absolute;
     margin-top: 200px;
-    margin-left: 30%;
+    margin-left: 35%;
     
     cursor: pointer;
     border-radius: 50%;
-    width: 150px;
+    width: 130px;
     box-shadow: 2px 2px 10px  black;
     border: 2px solid rgba(0, 0, 0, 0.644);
     
