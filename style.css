@@ -68,8 +68,13 @@ nav ul li a:hover{
 .pp{
     position: absolute;
     margin-top: 500px;
-    margin-left: 38%;
-    
+    /*margin-left: 38%;*/
+    /*display: flex;
+
+    justify-content: center;
+    align-items: center;*/
+    left: 50%;
+  transform: translate(-50%);
     cursor: pointer;
     border-radius: 50%;
     width: 100px;
@@ -81,7 +86,7 @@ nav ul li a:hover{
 .anim {
     position: absolute;
     margin-top: 200px;
-    font-size: 1.1rem;
+    font-size: 1.51rem;
     color: white;letter-spacing: 2px;
     text-shadow: 2px 2px 2px black;
     
@@ -103,23 +108,27 @@ nav ul li a:hover{
     position: absolute;
     margin-top: -200px;
     margin-bottom: 1200px;
-    font-size: 1.1rem;
+    margin-left: 50px;
+    font-size: 1.5rem;
     color: white;letter-spacing: 2px;
     text-shadow: 2px 2px 2px black;
     
+    
     animation-name: anime;
     
-    animation-duration: 11s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
     animation-direction: reverse;
-    rotate: 90deg;
+    width: 100px;
+    
 
   }
 @keyframes anime {
-    from {transform: translateX(-200px); }
+    0% {transform: translateY(260px);  }
+    50% {transform: translateY(300px);  }    
     
-    to {transform: translateX(950px); }
+    100% {transform: translateY(500px); width: 1px;}
   }
 
 
