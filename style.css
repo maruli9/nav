@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+    background-image: url(111.jpg);background-size: cover;
+    background-position: center;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00427419;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    box-shadow: 3px 3px 3px 0.1px black;
+
+}
+
+
+.logo{
+    color: #fff;
+    width: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff98;
+    transition: .5s;
+    font-size: 1.2rem;
+    
+    letter-spacing: .1rem;
+    
+}
+nav ul li a:hover{
+    color: black;
+    
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+.pp{
+    position: absolute;
+    margin-top: 500px;
+    /*margin-left: 38%;*/
+    /*display: flex;
+
+    justify-content: center;
+    align-items: center;*/
+    left: 50%;
+  transform: translate(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    box-shadow: 2px 2px 10px  black;
+    border: 2px solid rgba(0, 0, 0, 0.644);
+    
+}
+
+.anim {
+    position: absolute;
+    margin-top: 200px;
+    font-size: 1.51rem;
+    color: white;letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+    
+    animation-name: anim;
+    
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+
+  }
+@keyframes anim {
+    from {transform: translateX(-400px); }
+    
+    to {transform: translateX(250px); }
+  }
+
+  .anime {
+    position: absolute;
+    margin-top: -200px;
+    margin-bottom: 1200px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    color: white;letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+    rotate: '100deg';
+    
+    
+    animation-name: anime;
+    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-direction: reverse;
+    
+    
+    
+
+  }
+@keyframes anime {
+    0% {transform: translateY(260px); width: 20px;  }
+    
+    4% { transform: translateY(280px); width: 20px;  }
+    
+    
+    
+    
+    
+    100% {opacity: 0.1; transform:  translateY(600px); width: 1px;}
+  }
+
+
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #0042747d;
+        gap: 5px;
+        overflow: hidden;
+        height: 500px;
+        
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 15px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all .7s;
+    }
+    #cancel{
+        display: none;
+    }
+}

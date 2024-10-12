@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+    /*background-image: url(111.jpg);background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    background-color: rgb(87, 87, 87);
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333536fc;
+    position: fixed;
+    top: 0;
+    
+    
+    width: 100vw;
+    height: 70px;
+    box-shadow: 3px 3px 3px 0.1px black;
+}
+
+
+.logo{
+    color: #fff;
+    width: 50px;
+}
+.hk{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+    
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff98;
+    transition: .5s;
+    font-size: 1.2rem;
+    
+    letter-spacing: .1rem;
+    
+}
+nav ul li a:hover{
+    color: black;
+    
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #0042747d;
+        gap: 5px;
+        overflow: hidden;
+        height: 500px;
+        
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 15px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all .7s;
+    }
+    #cancel{
+        display: none;
+    }
+}
+    
+    
+
+img{
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    cursor: pointer;
+    
+    
+}
+
+.list{
+    
+    columns: 300px;
+    margin: auto;
+    width: 70%;
+    
+    
+}
+.zbiornik{
+    margin-top: 100px;
+}
+/*h1{margin-top: 50px;
+    text-align: center;
+    
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+    color: white;letter-spacing: .6rem;
+}*/
+
+
